@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Create post | DOM</title>
+</head>
+<body id="body">
+    <header>
+        <div class="container">
+            <div class="flex">
+                <div class="header-logo">
+                    <!-- <img src="" alt=""> -->
+                    <h1>LOGO</h1>
+                </div>
+                <div class="header-menu">
+                    <ul class="flex">
+                        <li><a href="#">Meu item 1</a></li>
+                        <li><a href="#">Meu item 2</a></li>
+                        <li><a href="#">Meu item 3</a></li>
+                        <li><a href="#">Meu item 4</a></li>
+                        <li><button id="createPost">Create new Post</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="body">
+        <div class="container">
+            <div class="flex">
+                <div class="profile">
+                    <img src="./src/imgs/profile.png" alt="">
+                    <h3>Jhon Doe</h3>
+                    <h5>Senior Frontend Developer | Mern Stack</h5>
+                    <ul>
+                        <li>My information</li>
+                        <li>My information</li>
+                        <li>My information</li>
+                        <li>My information</li>
+                        <li>My information</li>
+                        <li>My information</li>
+                    </ul>
+                </div>
+                <div class="posts">
+                    <div class="post-gird flex">
+                        <!-- <div class="postBox">
+                            <img src="./src/imgs/postImage.jpg" alt="">
+                            <div class="postContent">
+                                <h3>This is title</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quam magnam excepturi nemo asperiores dolorum sapiente saepe itaque sint! Praesentium!</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inputBackground" id="inputBackground">
+        <div class="postInput">
+            <span id="close">&times</span>
+            <form action="#">
+                <h3>Post Title</h3>
+                <input id="title" type="text" name="" id="">
+                <h3>Post Image</h3>
+                <input readonly id="image" type="text" name="" id="">
+                <h3>Post Content</h3>
+                <textarea id="content" name="" id="" cols="30" rows="10"></textarea>
+                <button id="submit">Done</button>
+            </form>
+        </div>
+    </div>
+    <script src="./src/app.js"></script>
+</body>
+</html>

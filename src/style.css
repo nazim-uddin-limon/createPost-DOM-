@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+a:link{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* header css */
+header{
+    background-color: aqua;
+}
+header div.flex{
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-menu{
+    align-items: center;
+}
+.header-menu li a{
+    color: #000;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+/* body css */
+.body{}
+/* .body div.flex{} */
+.body .profile{
+    flex-basis: 25%;
+    text-align: center;
+}
+.body .profile img{
+    width: 80%;
+    margin-top: 80px;
+}
+.body .profile ul{
+    text-align-last: left;
+    margin-top: 50px;
+}
+.body .posts{
+    flex-basis: 75%;
+    border: 1px solid #ddd;
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.body .posts::-webkit-scrollbar{
+    display: none;
+}
+.post-gird{
+    padding: 20px;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+.postBox{
+    flex-basis: 30%;
+    /* height: 280px; */
+    margin-right: 5%;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.postBox:nth-child(3n + 3){
+    margin-right: 0;
+}
+.postContent{
+    padding: 15px;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+}
+.postBox img{}
+.postBox p{
+}
+
+/* input box css */
+.inputBackground{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#close{
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    background-color: aqua;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 20px;
+    transition: .4s;
+}
+#close:hover, .postInput button:hover{
+    background-color: rgb(0, 208, 208);
+}
+.postInput{
+    height: 90vh;
+    width: 50vw;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.postInput h3{
+    margin: 20px 0 10px 3px;
+}
+.postInput input, .postInput textarea{
+    width: 100%;
+    border: 1px solid #ddd;
+    outline-color: aqua;
+}
+.postInput input{
+    height: 35px;
+}
+.postInput button{
+    padding: 10px 30px;
+    background-color: aqua;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-top: 30px;
+    transition: .4s;
+}
