@@ -10,7 +10,6 @@ createPost.addEventListener('click', () => {
 close.addEventListener('click', () => {
     inputBackground.style.display = 'none'
 })
-
 // post details
 let imgURL = 'src/imgs/postImage.jpg'
 let title = document.getElementById('title')

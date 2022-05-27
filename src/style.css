@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar{
+    display: none;
 }
 img{
     max-width: 100%;
@@ -19,40 +27,96 @@ a:link{
     max-width: 1200px;
     margin: auto;
 }
-
+body{
+    background-color: #f0f2f5;
+}
 /* header css */
 header{
-    background-color: aqua;
+    background-color: #fdfdfd;
 }
 header div.flex{
     height: 60px;
     justify-content: space-between;
     align-items: center;
 }
-.header-menu{
+.header-menu ul{
     align-items: center;
 }
+
 .header-menu li a{
-    color: #000;
+    color: #34495e;
     font-size: 16px;
     padding: 0 10px;
+    font-family: sans-serif;
+    font-weight: 600;
+    transition: .3s;
+}
+.header-menu li a:hover{
+    color: #080c11;
+}
+.header-menu li button {
+    padding: 10px 20px;
+    font-weight: 600;
+    background: #1b9bf0;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.header-menu li button:hover{
+    background-color: #3498db;
 }
 
 /* body css */
-.body{}
+/* .body{} */
 /* .body div.flex{} */
 .body .profile{
     flex-basis: 25%;
     text-align: center;
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+    padding: 15px;
 }
-.body .profile img{
-    width: 80%;
-    margin-top: 80px;
+.profile-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.body .profile #profile{
+    width: 90%;
+    margin-top: 20px;
+}
+.body .profile h3 {
+    font-size: 25px;
+    margin: 10px 0 5px;
+}
+.body .profile h5 {
+    font-size: 15px;
+    color: gray;
+    font-weight: 400;
 }
 .body .profile ul{
     text-align-last: left;
     margin-top: 50px;
 }
+.profile-box ul li {
+    margin-bottom: 15px;
+}
+.profile-box ul li span {
+    display: inline-block;
+    width: 22px;
+    color: #3498db;
+    font-size: 18px;
+}
+.profile-box ul li a {
+    color: #000;
+    font-weight: bold;
+}
+.profile-box ul li a:hover{
+    text-decoration: underline;
+}
+/* .profile-box ul li img{} */
 .body .posts{
     flex-basis: 75%;
     border: 1px solid #ddd;
@@ -72,6 +136,9 @@ header div.flex{
 .postBox{
     flex-basis: 30%;
     /* height: 280px; */
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
     margin-right: 5%;
     border: 1px solid #ddd;
     margin-bottom: 20px;
@@ -104,14 +171,15 @@ header div.flex{
     cursor: pointer;
     height: 20px;
     width: 20px;
-    background-color: aqua;
+    background-color: #1b9bf0;
+    color: #fff;
     text-align: center;
     border-radius: 50%;
     line-height: 20px;
     transition: .4s;
 }
 #close:hover, .postInput button:hover{
-    background-color: rgb(0, 208, 208);
+    background-color: #096cae;
 }
 .postInput{
     height: 90vh;
@@ -130,15 +198,18 @@ header div.flex{
 }
 .postInput input, .postInput textarea{
     width: 100%;
+    padding: 5px 10px;
+    font-size: 16px;
     border: 1px solid #ddd;
-    outline-color: aqua;
+    outline-color: #1b9bf0;
 }
 .postInput input{
     height: 35px;
 }
 .postInput button{
     padding: 10px 30px;
-    background-color: aqua;
+    background-color: #1b9bf0;
+    color: #fff;
     border: 1px solid #ddd;
     outline: none;
     border-radius: 5px;
